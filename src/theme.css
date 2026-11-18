@@ -1,0 +1,66 @@
+/* Soft cyan glow, shown when the scene is not published or not loaded. */
+.dark [data-workspace-area="conversation"] {
+  background:
+    radial-gradient(
+      ellipse at 50% 45%,
+      rgba(103, 232, 249, 0.035),
+      transparent 60%
+    ),
+    #060809;
+}
+
+/* With the scene running behind the app, let it show through the chat. */
+html.dark[data-theme-scene] [data-slot="sidebar-inset"],
+html.dark[data-theme-scene] [data-chat-view],
+html.dark[data-theme-scene] [data-workspace-area="conversation"] {
+  background: transparent;
+}
+
+/* Replies sit on a glass panel over the scene. */
+html.dark[data-theme-scene] [data-message-role="assistant"] .chat-markdown {
+  padding: 14px 18px;
+  border: 1px solid rgb(103 232 249 / 0.16);
+  border-radius: 8px;
+  background: rgb(6 8 9 / 0.78);
+  box-shadow: 0 18px 56px rgb(0 0 0 / 0.14);
+  text-shadow:
+    0 2px 14px rgb(0 0 0 / 0.62),
+    0 1px 1px rgb(0 0 0 / 0.84);
+}
+
+html.dark[data-theme-scene] [data-user-message-bubble] {
+  background: rgb(17 24 25 / 0.82);
+  border-color: rgb(103 232 249 / 0.16);
+}
+
+.dark [data-chat-header] {
+  background: #0a0d0e;
+  border-bottom-color: #1a2122;
+}
+
+.dark [data-slot="composer-host"] {
+  background: #0e1213;
+  border-color: #263031;
+  box-shadow: 0 16px 40px #00000066;
+}
+
+.dark [data-user-message-bubble] {
+  background: #111819;
+  color: #e4ecec;
+  border: 1px solid #22302f;
+}
+
+.dark [data-thread-details-card] {
+  background: #0e1213;
+  border-color: #1e2627;
+}
+
+.dark .chat-markdown a {
+  color: #67e8f9;
+  text-decoration-color: #67e8f955;
+  text-underline-offset: 3px;
+}
+
+.dark .chat-markdown-codeblock {
+  border-color: #1e2627;
+}

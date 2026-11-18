@@ -1,0 +1,12 @@
+{
+  "name": "obsidian-orbit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A dark T3 Code theme with a live particle sphere and network behind the chat.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check"
+  }
+}
